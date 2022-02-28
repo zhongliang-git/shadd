@@ -1,37 +1,12 @@
 {
-  "version": "2.0",
-  "envId": "{{env.ENV_ID}}",
-  "framework":{
-    "name":"lsky-pro",
-    "plugins":{
-      "client": {
-        "use": "@cloudbase/framework-plugin-container",
-        "inputs": {
-          "cpu": 0.5,
-          "mem": 1,
-          "serviceName": "lsky-pro",
-          "servicePath": "/",
-          "localPath": "/",
-          "mode":"high-availability",
-          "uploadType": "package",
-          "containerPort": 80,
-          "volumeMounts": {
-            "/var/www/html": "lsky-cfs"
-          }
-        }
-      }
-    },
-    "requirement": {
-      "addons": [
-        {
-          "type": "CFS",
-          "name": "lsky-cfs"
-        },
-        {
-          "type": "CynosDB",
-          "name": "lsky"
-        }
-      ]
+    "envId": "shadd-4g1eio9j584df7c0",
+    "version": "2.0",
+    "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+    "functionRoot": "./functions",
+    "functions": [],
+    "region": "ap-shanghai",
+    "framework": {
+        "name": "shadd",
+        "plugins": {}
     }
-  }
 }
